@@ -7,7 +7,7 @@ const createPost = async (e) => {
   const post = form.content.value;
   const body = JSON.stringify({ userId, title, post });
 
-  const response = await fetch('./api/posts', {
+  const response = await fetch('/api/posts', {
     method: 'POST',
     body,
     headers: { 'Content-type': 'application/json; charset=UTF-8' },
